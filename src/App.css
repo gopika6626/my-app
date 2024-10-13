@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+.launchbutton
+{
+    background-color: #252525;
+    height: 35px;
+    position: relative;
+    width: 267px;
+    color: #fefefe;
+    font-family: "Gilmer Medium-Regular", Helvetica;
+    font-size: 20.1px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-left: 171px;
+    margin-top:440px;
+}
+.vectorimage
+{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+
+}
+.cnslvector
+{
+    position: absolute;
+    top: 0px;  
+    right: 0px; 
+    z-index: 1000;  /* Ensure it appears on top of other elements */
+    transform: scale(0.8);
+    transform-origin: top;
+
+}
+.rotating-text
+{
+    font-family: "Gilmer Medium-Regular";
+    font-size: 22px;
+    font-weight: 10;
+    position: absolute;
+    top: 47%;
+    right:69%;
+    justify-content:left;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.maskvector
+{
+    
+    position:absolute;
+    right:20%;
+    transform: translateY(90%);
+    
+    
+}
+.mask1
+{
+    position:absolute;
+    transform:translateX(-50%);
+    top:20%;
+    
+}
+.heading
+{
+    position:absolute;
+    top:2%;
+    color: #252525;
+    font-family: "Gilmer Medium-Regular", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    left:5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.vectors
+{
+    position:absolute;
+    top:4%;
+    right:30%;
+    opacity: 50%;
 }
+.constant-text
+{
+    position: absolute;
+    font-family: "Gilmer Medium-Regular";
+    font-size: 22px;
+    font-weight: 10;
+    position: absolute;
+    top: 47%;
+    right:80%;
+    text-align: left;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container
+{
+    background-color: #fefefe;
 }
