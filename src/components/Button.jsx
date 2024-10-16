@@ -1,15 +1,15 @@
 import React from 'react';
-import Vector from '../Vector1.png'
+import Vector from '../Vector1.png';
 
-const Button = () => {
+const Button = ({ onClick }) => {
   return (
     <div>
-      <button className="launchbutton">
-      <span>launching soon</span>
-      <img src={Vector} alt="Vector Icon" className="vectorimage" />
-    </button>
+      <button onClick={onClick} className="launchbutton">
+        <span>launching soon</span>
+        <img src={Vector} alt="Vector Icon" className="vectorimage" />
+      </button>
     </div>
   );
-}
+};
 
 export default Button;

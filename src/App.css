@@ -12,6 +12,7 @@
     text-align: center;
     margin-left: 171px;
     margin-top:440px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .vectorimage
 {
@@ -84,13 +85,58 @@
     font-size: 22px;
     font-weight: 10;
     position: absolute;
-    top: 47%;
-    right:80%;
+    top: 50%;
+    right:78%;
     text-align: left;
 
 
 }
 .container
-{
+{ 
     background-color: #fefefe;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.play-word {
+    display: flex;
+  align-items: baseline;
+  margin-top: 60%;
+  margin-left:-40%;
+  
+    
+  }
+  
+  .reality-word {
+    
+
+    display: flex;
+    align-items: baseline;
+    margin-top: 38%;
+    margin-left:-0.95%;
+    
+  }
+
+  
+  .gaming-word {
+    display: flex;
+    align-items: baseline;
+    margin-top: 34%;
+    margin-left:15%;
+    
+  }
+
+  .launched body,
+.launched .container {
+  background-color: #252525; 
+  color: #fefefe; 
+  
+}
+
+  .launched h1, .launched .constant-text, .launched .rotating-text {
+    color: #fefefe; 
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  

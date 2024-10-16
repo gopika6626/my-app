@@ -5,7 +5,9 @@ import Cns from './assets/cnslcomponent.png';
 import Mask from './assets/Mask group1.png'
 import Masks from './assets/Mask group left top.png'
 import Vectors from './assets/Vector2.png'
+import Cnsl from './assets/cnsl.png'
 const App = () => {
+  const [isLaunched, setIsLaunched] = useState(false);
 
   const words = ['Play', 'Reality', 'Gaming'];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -18,9 +20,15 @@ const App = () => {
   
   const wordClasses = ['play-word', 'reality-word', 'gaming-word'];
 
+const handleLaunchClick = () => {
+  setIsLaunched(true);
+  document.body.classList.add('launched');
+
+};
+
 
   return (
-    <div className="container">
+    <div className={`container ${isLaunched ? 'launched' : ''}`}>
       <div className='constant-text'>
         <h1>
           Redefine
@@ -29,17 +37,22 @@ const App = () => {
 
 <div className="rotating-text">
         <h1>
-          <span>{words[currentWordIndex]}</span>.
+        <span className={wordClasses[currentWordIndex]}>{words[currentWordIndex]}</span>
         </h1>
       </div>
       
       <div>
-      <Button/>
+      <Button onClick={handleLaunchClick} />
+
       
       </div>
       
       <div className="cnslvector">
-      <img src = {Cns} alt="Cnsl" className="side-cnsl"/>
+        {!isLaunched?(
+          <img src = {Cns} alt="Cnsl" className="side-cnsl"/>
+
+        ):(<img src={Cnsl} alt="New Vector" className="vectorimages" />)}
+      
       </div>
 
       <div className='maskvector'>
@@ -55,8 +68,6 @@ const App = () => {
       <div className='vectors'>
         <img src={Vectors} alt="vectors" className="vectors1"/>
       </div>
-
-
       
     </div>
 
